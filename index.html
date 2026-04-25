@@ -854,14 +854,12 @@ footer p{
       <p>You are providing with everything you have —</p>
       <p>and quietly wondering if it is enough.</p>
       <p>This guide was built for that moment.</p>
-    </div>
-    <div class="hero-form">
-      <input type="text" placeholder="First name" autocomplete="given-name">
-      <input type="email" placeholder="Email address" autocomplete="email">
-      <button class="hero-btn" onclick="handleOptIn()">Send me the free guide →</button>
-      <p class="hero-fine">100% free. No spam. No games. Just the bridge.</p>
-    </div>
-  </div>
+    <form action="https://formspree.io/f/mbdqwbgo" method="POST" class="hero-form">
+  <input type="text" name="first_name" placeholder="First name" autocomplete="given-name" required>
+  <input type="email" name="email" placeholder="Email address" autocomplete="email" required>
+  <button type="submit" class="hero-btn">Send me the free guide →</button>
+  <p class="hero-fine">100% free. No spam. No games. Just the bridge.</p>
+</form> </div>
   <div class="hero-right">
     <div class="hero-visual">
       <div class="book-cover-wrapper">
@@ -1018,10 +1016,10 @@ footer p{
   <p class="section-label" style="color:var(--gold);margin-bottom:16px">Your next step</p>
   <h2 class="cta-headline">Paradise Island is not a dream.<br>It is a <em>decision.</em></h2>
   <p class="cta-body">Download the free guide. Walk the bridge. Begin the journey your children deserve.</p>
-  <div class="cta-form">
-    <input type="email" placeholder="Your email address" autocomplete="email">
-    <button class="hero-btn" style="white-space:nowrap" onclick="handleOptIn()">Get the free guide →</button>
-  </div>
+  <form action="https://formspree.io/f/mbdqwbgo" method="POST" class="cta-form">
+  <input type="email" name="email" placeholder="Your email address" required>
+  <button type="submit" class="cta-btn">Get the free guide →</button>
+</form>
   <div class="steps-row">
     <div class="step-item">
       <div class="step-circle">1</div>
